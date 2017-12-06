@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C89ACE61FCB2B1900706DE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89ACE51FCB2B1900706DE3 /* DetailViewController.swift */; };
 		2CAD31A71FACD89400916691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD31A61FACD89400916691 /* AppDelegate.swift */; };
 		2CAD31A91FACD89400916691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD31A81FACD89400916691 /* ViewController.swift */; };
-		2CAD31AC1FACD89500916691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD31AA1FACD89500916691 /* Main.storyboard */; };
 		2CAD31AE1FACD89500916691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD31AD1FACD89500916691 /* Assets.xcassets */; };
 		2CAD31B11FACD89500916691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD31AF1FACD89500916691 /* LaunchScreen.storyboard */; };
 		2CAD31BC1FACD89500916691 /* PrintTableRowIndicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD31BB1FACD89500916691 /* PrintTableRowIndicesTests.swift */; };
+		2CAD31F91FB4E5DC00916691 /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD31F81FB4E5DC00916691 /* IndexTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C89ACE51FCB2B1900706DE3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2CAD31A31FACD89400916691 /* PrintTableRowIndices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintTableRowIndices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAD31A61FACD89400916691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CAD31A81FACD89400916691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2CAD31AB1FACD89500916691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CAD31AD1FACD89500916691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CAD31B01FACD89500916691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CAD31B21FACD89500916691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CAD31B71FACD89500916691 /* PrintTableRowIndicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintTableRowIndicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAD31BB1FACD89500916691 /* PrintTableRowIndicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintTableRowIndicesTests.swift; sourceTree = "<group>"; };
 		2CAD31BD1FACD89500916691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CAD31F81FB4E5DC00916691 /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 			children = (
 				2CAD31A61FACD89400916691 /* AppDelegate.swift */,
 				2CAD31A81FACD89400916691 /* ViewController.swift */,
-				2CAD31AA1FACD89500916691 /* Main.storyboard */,
+				2C89ACE51FCB2B1900706DE3 /* DetailViewController.swift */,
+				2CAD31F81FB4E5DC00916691 /* IndexTableViewCell.swift */,
 				2CAD31AD1FACD89500916691 /* Assets.xcassets */,
 				2CAD31AF1FACD89500916691 /* LaunchScreen.storyboard */,
 				2CAD31B21FACD89500916691 /* Info.plist */,
@@ -181,7 +184,6 @@
 			files = (
 				2CAD31B11FACD89500916691 /* LaunchScreen.storyboard in Resources */,
 				2CAD31AE1FACD89500916691 /* Assets.xcassets in Resources */,
-				2CAD31AC1FACD89500916691 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +203,8 @@
 			files = (
 				2CAD31A91FACD89400916691 /* ViewController.swift in Sources */,
 				2CAD31A71FACD89400916691 /* AppDelegate.swift in Sources */,
+				2CAD31F91FB4E5DC00916691 /* IndexTableViewCell.swift in Sources */,
+				2C89ACE61FCB2B1900706DE3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +227,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2CAD31AA1FACD89500916691 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CAD31AB1FACD89500916691 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2CAD31AF1FACD89500916691 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

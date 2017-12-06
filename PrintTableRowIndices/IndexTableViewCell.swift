@@ -9,7 +9,11 @@
 import UIKit
 
 class IndexTableViewCell: UITableViewCell {
-
+    
+    // MARK: Properties
+    
+    var indexLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -8,18 +8,23 @@
 
 import UIKit
 
-class IndexViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: Properties
     var indexTableView = UITableView()
-    var detailViewController = DetailViewController()
     let cellIdentifier = "reuseIdentifier"
     //var numIndices: Int = 10
     
     // MARK: UIViewController
-    
+    // Not used when navigation controller used for navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let selectedRow = indexTableView.indexPathForSelectedRow {
+            indexTableView.deselectRow(at: selectedRow, animated: false)
+        }
     }
     
     // MARK: UITableViewDataSource
@@ -54,15 +59,28 @@ class IndexViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // MARK: Assignment #1: Print index path to console
         //print("Index Path: " + String(indexPath.row))
+        
+        // Better code design to create detail view controller in here
+        // Create it as you need it
+        let detailViewController = DetailViewController()
         detailViewController.numberLabel.text = String(indexPath.row)
-        present(detailViewController, animated: true, completion: nil)
+        
+        // MARK: Assignment #2: Create new VC and present modally
+        //present(detailViewController, animated: true, completion: nil)
+        // Dismiss 1: with X icon button on top right
+        // Dismiss 2: with background tap
+        
+        // MARK: Assignment #3: Put everything in NVC and push new VC
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     // MARK: Basic Functionality
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "IndexViewController"
         //indexTableView.frame = self.view.bounds
         self.view.addSubview(indexTableView)
         indexTableView.delegate = self
